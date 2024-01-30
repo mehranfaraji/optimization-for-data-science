@@ -163,7 +163,7 @@ def plot_gap_vs_iter(gaps, yaxis_log=True, xaxis_log= False, title=""):
     fig.update_layout(
         title= title,
         xaxis=dict(title='Iteration', type=xlog),
-        yaxis=dict(title='Gap', type=ylog), 
+        yaxis=dict(title='Gap Log scale', type=ylog), 
         width=600,
         height = 400, 
         autosize=False,
@@ -218,8 +218,8 @@ def plot_gap_vs_cputime(gaps, cpu_times, yaxis_log=True, xaxis_log= False, title
 
     fig.update_layout(
         title= title,
-        xaxis=dict(title='Iteration', type=xlog),
-        yaxis=dict(title='Gap', type=ylog), 
+        xaxis=dict(title='CPU Time', type=xlog),
+        yaxis=dict(title='Gap Log scale', type=ylog), 
         width=600,
         height = 400, 
         autosize=False, 
