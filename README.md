@@ -28,3 +28,7 @@ This repository contains the implementation and experimentation for training Sof
 
 1. Open the `experiments.ipynb` notebook in a Jupyter environment.
 2. Run each cell in the notebook to execute experiments and analyze results.
+
+## Additional Information
+
+Note that training models on *a4a* and *SVM guide* datasets is time consuming. You can either reduce the number of iterations or use *Liver Disorder* or *Synthetic* dataset. 
