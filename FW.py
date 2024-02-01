@@ -144,8 +144,8 @@ class ASFW(FW):
     def _away_step(self, grad, duality_gap, d_fw):
         v = np.zeros(grad.shape)
         active_alphas = np.where(self.x > 0)[0]
-        potential_descent = grad[active_alphas]
-        index_grad_max = potential_descent.argmax()
+        potential_ascent = grad[active_alphas]
+        index_grad_max = potential_ascent.argmax()
         v_index = active_alphas[index_grad_max]
         v[v_index] = 1
         d_a = self.x - v
@@ -203,8 +203,8 @@ class PWFW(FW):
     def _pairwise_step(self, grad, s):
         v = np.zeros(grad.shape)
         active_alphas = np.where(self.x > 0)[0]
-        potential_descent = grad[active_alphas]
-        index_grad_max = potential_descent.argmax()
+        potential_ascent = grad[active_alphas]
+        index_grad_max = potential_ascent.argmax()
         v_index = active_alphas[index_grad_max]
         v[v_index] = 1
         d_pw = s - v
