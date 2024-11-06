@@ -24,6 +24,16 @@ This repository contains the implementation and experimentation for training Sof
 - `images/`: Directory containing images produced in the experiments.ipynb.
 - `datasets/`: Directory containing datasets used for the project.
 
+## Results
+
+The images below demonstrate the superiority of the Pairwise Frank-Wolfe algorithm over the Away-step Frank-Wolfe and the standard Frank-Wolfe algorithms. This is based on metrics such as the duality gap versus the number of iterations and the duality gap versus CPU time. The plots also illustrate the linear convergence of the algorithms. All results are consistent with existing literature.
+
+### Duality Gap vs CPU Time
+![Duality Gap vs CPU Time on the Liver Disorder Dataset](images/Duality%20Gap%20vs%20CPU%20time%20on%20the%20Liver%20Disorder%20Dataset.png)
+
+### Duality Gap vs Iterations
+![Duality Gap vs Iterations on the Liver Disorder Dataset](images/Duality%20Gap%20vs%20Iterations%20on%20the%20Liver%20Disorder%20Dataset.png)
+
 ## How to Run Experiments
 
 1. Open the `experiments.ipynb` notebook in a Jupyter environment.
